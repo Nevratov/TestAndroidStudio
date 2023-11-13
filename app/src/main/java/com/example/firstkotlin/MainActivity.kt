@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        textViewName = findViewById(R.id.textViewName)
+        editTextName = findViewById(R.id.editTextName)
+        buttonSave = findViewById(R.id.buttonSave)
 
         buttonSave.setOnClickListener { textViewName.text = editTextName.text }
     }
